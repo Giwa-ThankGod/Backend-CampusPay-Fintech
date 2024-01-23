@@ -1,0 +1,68 @@
+[
+    {
+        "model": "user.User",
+        "pk": 2,
+        "fields": {
+            "email": "user1@gmail.com",
+            "phone": "+2349077484503",
+            "password": "pbkdf2_sha256$600000$mQT7t2MGUesZI6PN033QuK$eT8rphIHqYrVb4tkSLu2uU1hPCa5KNk362XjAQBwfLY=",
+            "is_vendor": true,
+            "is_customer": false
+        }
+    },
+    {
+        "model": "user.User",
+        "pk": 3,
+        "fields": {
+            "email": "user2@gmail.com",
+            "phone": "+2349050994503",
+            "password": "pbkdf2_sha256$600000$mQT7t2MGUesZI6PN033QuK$eT8rphIHqYrVb4tkSLu2uU1hPCa5KNk362XjAQBwfLY=",
+            "is_vendor": false,
+            "is_customer": true
+        }
+    },
+    {
+        "model": "user.User",
+        "pk": 4,
+        "fields": {
+            "email": "user3@gmail.com",
+            "phone": "+2348051296603",
+            "password": "pbkdf2_sha256$600000$mQT7t2MGUesZI6PN033QuK$eT8rphIHqYrVb4tkSLu2uU1hPCa5KNk362XjAQBwfLY=",
+            "is_vendor": true,
+            "is_customer": false
+        }
+    },
+    {
+        "model": "user.User",
+        "pk": 5,
+        "fields": {
+            "email": "user4@gmail.com",
+            "phone": "+2349022217101",
+            "password": "pbkdf2_sha256$600000$mQT7t2MGUesZI6PN033QuK$eT8rphIHqYrVb4tkSLu2uU1hPCa5KNk362XjAQBwfLY=",
+            "is_vendor": false,
+            "is_customer": true
+        }
+    },
+    {
+        "model": "user.User",
+        "pk": 6,
+        "fields": {
+            "email": "user5@gmail.com",
+            "phone": "+2347036098289",
+            "password": "pbkdf2_sha256$600000$mQT7t2MGUesZI6PN033QuK$eT8rphIHqYrVb4tkSLu2uU1hPCa5KNk362XjAQBwfLY=",
+            "is_vendor": false,
+            "is_customer": true
+        }
+    },
+    {
+        "model": "user.User",
+        "pk": 7,
+        "fields": {
+            "email": "user6@gmail.com",
+            "phone": "+23481223321120",
+            "password": "pbkdf2_sha256$600000$mQT7t2MGUesZI6PN033QuK$eT8rphIHqYrVb4tkSLu2uU1hPCa5KNk362XjAQBwfLY=",
+            "is_vendor": true,
+            "is_customer": false
+        }
+    }
+]
