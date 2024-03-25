@@ -42,7 +42,7 @@ class Vendor(models.Model):
     business_type = models.CharField(max_length=30, blank=True)
     institution = models.CharField(max_length=200, null=True, blank=True)
     qrcode = models.ImageField(upload_to='qrcode/vendors/', null=True, blank=True)
-    transaction_pin = models.CharField(max_length=6, null=True, blank=True)
+    transaction_pin = models.CharField(max_length=50, null=True, blank=True)
     
     def save(self, *args, **kwargs):
         generated_ID = generate_ID(vendor=True)
@@ -104,7 +104,7 @@ class Customer(models.Model):
     gender = models.CharField(max_length=20, null=True, blank=True)
     institution = models.CharField(max_length=200, blank=True)
     qrcode = models.ImageField(upload_to='qrcode/customers/', null=True, blank=True)
-    transaction_pin = models.CharField(max_length=6, null=True, blank=True)
+    transaction_pin = models.CharField(max_length=50, null=True, blank=True)
 
     def save(self, *args, **kwargs):
         generated_ID = generate_ID(customer=True)
