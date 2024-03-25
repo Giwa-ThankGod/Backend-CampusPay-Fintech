@@ -1,4 +1,5 @@
 import requests
+import bcrypt
 from decimal import Decimal
 
 from django.shortcuts import get_object_or_404
@@ -268,6 +269,12 @@ def authorization_pin(request, phone):
         - download and install bcrypt
         - hash the user's authorization pin and save to database
         """
+        hashed_authorization_pin = bcrypt.hashpw(
+            authorization_pin.encode(),
+            bcrypt.gensalt()
+        )
+        initiator.transaction_pin = hashed_authorization_pin
+        initiator.save()
     elif request.method == "PATCH":
         return
 
